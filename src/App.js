@@ -1,28 +1,34 @@
-import './App.css';
+import React from 'react';
 import { TodoCounter } from './TodoCounter';
-import { TodoSearch } from './TodoSearch';
+import { AddTask } from './AddTask';
 import { TodoList } from './TodoList';
 import { TodoItem } from './TodoItem';
-import { CreateTodoButton } from './CreateTodoButton';
 
+const defaultTodos = [
+  {  Text: "Programar", completed: false },
+  {  Text: "Hacer el almuerzo", completed: false },
+  {  Text: "estudiar inglés", completed: false },
+  {  Text: "Tender la cama", completed: false },
+  {  Text: "llamar a mamá", completed: false },
+  
+];
 
 
 function App() {
   return (
-    <div className="App">
-
+    <>
       <TodoCounter/>
-      <TodoSearch/>
+      <AddTask/>
       <TodoList>
-        <TodoItem/>
-        <TodoItem/>
-        <TodoItem/>
+        { defaultTodos.map(todo => (
+        <TodoItem 
+        key={todo.Text} 
+        Text={todo.Text} 
+        completed={todo.completed} />
+      ))}
+
       </TodoList>
-      <CreateTodoButton/>
-
-
-
-    </div>
+    </>
   );
 }
 

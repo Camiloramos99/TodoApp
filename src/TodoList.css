@@ -1,0 +1,9 @@
+.Todo-list {
+    grid-column: 2 / 3;
+    width: 100%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}

@@ -1,0 +1,26 @@
+li {
+    list-style: none;
+    background-color:#00BFA5;
+    display: flex;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 0;
+    height: 40px;
+    padding: 0 10px;
+    align-items: center;
+}
+li p {
+    display: inline-block;
+    color: #F9FBFC;
+    margin: 0;
+    padding: 7px;
+}
+.actions {
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+}
+.check-todo {
+    margin-right: 5px; 
+}
+

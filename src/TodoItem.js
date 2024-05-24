@@ -1,10 +1,15 @@
+import "./TodoItem.css";
 
-function TodoItem() {
+
+function TodoItem(props) {
     return (
       <li>
-        <span>v</span> 
-        <p>Estudiar inglés</p>
-        <span>x</span>
+        <p>{props.Text}</p>
+        <div className="actions">
+        <span className="check-todo fa fa-check-square-o" ></span> 
+        <span className="delete-todo fa fa-trash-o"></span>
+        </div>
+      
       </li>
     );
   }

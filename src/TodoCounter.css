@@ -1,0 +1,12 @@
+h1 {
+    font-size: 25px;
+    font-weight: 1000;
+    text-align: center;
+    margin: 0;
+    padding: 48px;
+    color: #F9FBFC;
+    grid-column: 2 / 3;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}

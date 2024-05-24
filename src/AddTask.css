@@ -1,0 +1,35 @@
+.add-task-section {
+    grid-column: 2 / 3;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+input {
+    border-color: #00BFA5;
+    background-color: #2D3E50;
+    width: 65%;
+    padding: 0 10px;
+    box-sizing: border-box;
+
+}
+
+.add-task-btn {
+    background-color: #00BFA5;
+    border: none;
+    color: #F9FBFC	;
+    font-weight:750;
+    width: 35%;
+    border-radius: 0 8px 8px 0;
+    text-transform: uppercase; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+input, .add-task-btn {
+    height: 36.5px;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+  }

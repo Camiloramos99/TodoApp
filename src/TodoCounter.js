@@ -1,7 +1,9 @@
+import "./TodoCounter.css";
 
 function TodoCounter() {
     return (
-      <h1> has completado 5 de 8 todos</h1>
+      <h1>You have completed 
+      <br/> 5 of 8 all</h1>
     );
   }
 
