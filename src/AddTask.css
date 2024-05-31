@@ -1,8 +1,8 @@
 .add-task-section {
     grid-column: 2 / 3;
     width: 100%;
-    margin: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+
 }
 
 input {
@@ -10,7 +10,8 @@ input {
     background-color: #2D3E50;
     width: 65%;
     padding: 0 10px;
-    box-sizing: border-box;
+    color: #F9FBFC;
+    outline: none;
 
 }
 
@@ -19,6 +20,7 @@ input {
     border: none;
     color: #F9FBFC	;
     font-weight:750;
+    cursor: pointer;
     width: 35%;
     border-radius: 0 8px 8px 0;
     text-transform: uppercase; 

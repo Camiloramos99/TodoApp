@@ -1,12 +1,15 @@
 h1 {
-    font-size: 25px;
-    font-weight: 1000;
+    font-size: 1.75rem;
+    font-weight: 400;
     text-align: center;
     margin: 0;
-    padding: 48px;
+    padding: 35px;
     color: #F9FBFC;
     grid-column: 2 / 3;
     white-space: nowrap;
     text-overflow: ellipsis;
     box-sizing: border-box;
+}
+.TodoCounter span {
+    font-weight: bold;
 }

@@ -3,15 +3,17 @@ li {
     background-color:#00BFA5;
     display: flex;
     border-radius: 5px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
     border: 0;
     height: 40px;
     padding: 0 10px;
     align-items: center;
+
 }
 li p {
     display: inline-block;
     color: #F9FBFC;
+    font-size: 12.5px;    
     margin: 0;
     padding: 7px;
 }
@@ -20,7 +22,24 @@ li p {
     margin-left: auto;
     cursor: pointer;
 }
-.check-todo {
+.icon{
+    cursor: pointer;
+}
+.todo-item-p--completed {
+    text-decoration: line-through;
+}
+.icon-check {
     margin-right: 5px; 
 }
+.icon-check--active{
+    color: #4caf50;
+}
+/* lo comento porque creo que no es rojo, simplemente deberia no tener estilo
+.icon-check--inactive {
+    color: #f44336; Rojo 
+}
+*/
 
+.icon-delete:hover{
+    color: red;
+}
