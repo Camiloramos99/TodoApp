@@ -21,6 +21,20 @@ function App() {
 
   const totalTodos = todos.length;
 
+  const completeTodo = (Text) => {
+    
+    const newTodos = [...todos];
+
+    const todoIndex = newTodos.findIndex(
+      (todo) => todo.Text == Text
+    );
+
+    newTodos[todoIndex].completed = true;
+
+    setTodos(newTodos);
+
+  };
+
 
 
   return (
@@ -33,7 +47,12 @@ function App() {
         <TodoItem 
         key={todo.Text} 
         Text={todo.Text} 
-        completed={todo.completed} />
+        completed={todo.completed}
+
+        onComplete={ () => (
+          completeTodo(todo.Text)
+        )}
+        />
       ))}
 
       </TodoList>

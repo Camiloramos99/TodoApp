@@ -8,9 +8,12 @@ function TodoItem(props) {
         <p className= {`${props.completed && "todo-item-p--completed"}`} >{props.Text}</p>
         <div className="actions">
         <span className= {`fa fa-check-square-o icon icon-check ${props.completed && "icon-check--active"}`} 
-          onClick={
-            () => console.log("diste click en icon-check")
-          }
+          onClick={props.onComplete}
+
+            
+
+
+          
         ></span> 
 
         <span className="fa fa-trash-o icon icon-delete"
