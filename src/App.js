@@ -5,11 +5,11 @@ import { TodoList } from './TodoList';
 import { TodoItem } from './TodoItem';
 
 const defaultTodos = [
-  {  Text: "Programar", completed: true },
-  {  Text: "Hacer el almuerzo", completed: false },
-  {  Text: "estudiar inglés", completed: false },
-  {  Text: "Tender la cama", completed: false },
-  {  Text: "llamar a mamá", completed: false },
+  {  text: "Programar", completed: true },
+  {  text: "Hacer el almuerzo", completed: false },
+  {  text: "estudiar inglés", completed: false },
+  {  text: "Tender la cama", completed: false },
+  {  text: "llamar a mamá", completed: false },
 ];
 
 
@@ -21,37 +21,48 @@ function App() {
 
   const totalTodos = todos.length;
 
-  const completeTodo = (Text) => {
-    
+
+  const completeTodo = (text) => {   
     const newTodos = [...todos];
-
     const todoIndex = newTodos.findIndex(
-      (todo) => todo.Text == Text
-    );
-
+      (todo) => todo.text === text
+      );
     newTodos[todoIndex].completed = true;
-
     setTodos(newTodos);
-
   };
+
+  const deleteTodo = (text) => {
+    const newTodos = [...todos];
+    const todoIndex = newTodos.findIndex(
+      (todo) => todo.text === text
+      );
+    newTodos.splice(todoIndex, 1);
+    setTodos(newTodos);
+  };
+
+  
 
 
 
   return (
     <>
-      <TodoCounter completed={completedTodos} total={totalTodos}
+      <TodoCounter 
+      completed={completedTodos} 
+      total={totalTodos}
       />
       <AddTask/>
       <TodoList>
-        { defaultTodos.map(todo => (
+        { todos.map(todo => (
         <TodoItem 
-        key={todo.Text} 
-        Text={todo.Text} 
+        key={todo.text} 
+        Text={todo.text} 
         completed={todo.completed}
-
-        onComplete={ () => (
-          completeTodo(todo.Text)
-        )}
+        onComplete={ () => 
+          completeTodo(todo.text)
+        }
+        onDelete={ () => 
+          deleteTodo(todo.text)
+        }
         />
       ))}
 

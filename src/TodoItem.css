@@ -1,6 +1,6 @@
 li {
     list-style: none;
-    background-color:#00BFA5;
+    background-color:#00bfa566;
     display: flex;
     border-radius: 5px;
     margin-bottom: 0.6rem;
@@ -17,29 +17,10 @@ li p {
     margin: 0;
     padding: 7px;
 }
-.actions {
-    display: flex;
-    margin-left: auto;
-    cursor: pointer;
-}
-.icon{
-    cursor: pointer;
-}
-.todo-item-p--completed {
-    text-decoration: line-through;
-}
-.icon-check {
-    margin-right: 5px; 
-}
-.icon-check--active{
-    color: #4caf50;
-}
-/* lo comento porque creo que no es rojo, simplemente deberia no tener estilo
-.icon-check--inactive {
-    color: #f44336; Rojo 
-}
-*/
 
-.icon-delete:hover{
-    color: red;
+.TodoItem-p {
+    width: -webkit-fill-available;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
 }

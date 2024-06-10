@@ -1,28 +1,23 @@
 import React from 'react';
+import { CompleteIcon } from "./CompleteIcon"
+import { DeleteIcon } from "./DeleteIcon"
 import "./TodoItem.css";
 
 
 function TodoItem(props) {
     return (
-      <li>
-        <p className= {`${props.completed && "todo-item-p--completed"}`} >{props.Text}</p>
-        <div className="actions">
-        <span className= {`fa fa-check-square-o icon icon-check ${props.completed && "icon-check--active"}`} 
-          onClick={props.onComplete}
+      <li className='TodoItem'>
+        <CompleteIcon 
+        completed={props.completed}
+        onComplete={props.onComplete}/>
 
-            
+        <p className= {`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>
+          {props.Text}
+        </p>
 
-
-          
-        ></span> 
-
-        <span className="fa fa-trash-o icon icon-delete"
-          onClick={
-            () => console.log("diste click en eliminar")
-          }
-        ></span>
-        </div>
-      
+        <DeleteIcon 
+        onDelete={props.onDelete}
+        />   
       </li>
     );
   }

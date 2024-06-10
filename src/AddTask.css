@@ -6,7 +6,7 @@
 }
 
 input {
-    border-color: #00BFA5;
+    border-color: #00bfa566;
     background-color: #2D3E50;
     width: 65%;
     padding: 0 10px;
@@ -16,7 +16,7 @@ input {
 }
 
 .add-task-btn {
-    background-color: #00BFA5;
+    background-color: #00bfa566;
     border: none;
     color: #F9FBFC	;
     font-weight:750;

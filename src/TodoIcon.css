@@ -1,0 +1,29 @@
+.Icon-svg {
+    width: 26px;
+    height: 24px;
+  }
+  .icon-container {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.TodoItem-p--complete {
+    text-decoration: line-through;
+}
+.Icon-container-check {
+    margin-right: 0px; 
+}
+.Icon-container-delete {  
+    margin-left: auto; 
+}
+.Icon-container-delete:hover .Icon-svg{
+  fill: red;
+}
+.Icon-container-check:hover .Icon-svg{
+  fill: #4caf50;
+}
