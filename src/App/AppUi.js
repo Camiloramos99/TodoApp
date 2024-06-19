@@ -2,6 +2,7 @@ import { TodoCounter } from '../TodoCounter';
 import { AddTask } from '../AddTask';
 import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoItem';
+import { TodosLoading } from '../TodosLoading';
 
 function AppUi({ 
     loading,
@@ -21,7 +22,11 @@ function AppUi({
           <AddTask/>
           <TodoList>
 
-            {loading && <p>Estamos cargando...</p>}
+            {loading && (
+              <>
+              <TodosLoading />
+              </>
+              )}
             {error && <p>Hubo un error!!</p>}
             {(!loading && todos.length === 0) && <p>Crea tu primer TODO!!</p>}
 

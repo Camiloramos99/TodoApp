@@ -1,8 +1,8 @@
 .add-task-section {
     grid-column: 2 / 3;
     width: 100%;
-    margin-bottom: 1rem;
-
+    position: absolute;
+    top: 152px;
 }
 
 input {

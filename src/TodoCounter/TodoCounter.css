@@ -2,8 +2,6 @@ h1 {
     font-size: 1.75rem;
     font-weight: 400;
     text-align: center;
-    margin: 0;
-    padding: 35px;
     color: #F9FBFC;
     grid-column: 2 / 3;
     white-space: nowrap;
