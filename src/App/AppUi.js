@@ -3,6 +3,8 @@ import { AddTask } from '../AddTask';
 import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoItem';
 import { TodosLoading } from '../TodosLoading';
+import { TodosError } from '../TodosError';
+import { EmptyTodos } from '../EmptyTodos';
 
 function AppUi({ 
     loading,
@@ -27,8 +29,8 @@ function AppUi({
               <TodosLoading />
               </>
               )}
-            {error && <p>Hubo un error!!</p>}
-            {(!loading && todos.length === 0) && <p>Crea tu primer TODO!!</p>}
+            {error && <TodosError/>}
+            {(!loading && todos.length === 0) && <EmptyTodos/>}
 
             {todos.map(todo => (
             <TodoItem 

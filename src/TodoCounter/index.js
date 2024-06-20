@@ -3,9 +3,9 @@ import "./TodoCounter.css";
 
 
 function TodoCounter({ total, completed }) {
-      if (completed === total) {
+      if (completed === total && total != 0 ) {
         return (
-          <h1> ¡Felicitaciones, <br/> todos completados! </h1>  
+          <h1> Congratulations, <br/> TODOS completed!! </h1>  
           );
       } else {
         return ( 
