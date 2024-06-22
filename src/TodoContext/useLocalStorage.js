@@ -46,3 +46,14 @@ function useLocalStorage(itemName, initialValue)  {
   }
 
   export { useLocalStorage };
+
+  // const defaultTodos = [
+//   {  text: "Programar", completed: true },
+//   {  text: "Hacer el almuerzo", completed: false },
+//   {  text: "estudiar inglés", completed: false },
+//   {  text: "Tender la cama", completed: false },
+//   {  text: "llamar a mamá", completed: false },
+// ];
+// localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
+
+// Custom Hook para guardar todos (items) de usuario
