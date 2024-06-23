@@ -6,7 +6,9 @@ import { TodoItem } from '../TodoItem';
 import { TodosLoading } from '../TodosLoading';
 import { TodosError } from '../TodosError';
 import { EmptyTodos } from '../EmptyTodos';
+import { Modal } from '../Modal';
 import { TodoContext } from '../TodoContext';
+
 
 function AppUi() {
   const { 
@@ -14,7 +16,9 @@ function AppUi() {
     error,
     completeTodo,
     deleteTodo,
-    todos
+    todos,
+    openModal,
+    setOpenModal,
  } = React.useContext(TodoContext);
     return (
         <>
@@ -40,8 +44,16 @@ function AppUi() {
               onDelete={ () => 
                 deleteTodo(todo.text)}
             />
-          ))}
+            ))}
           </TodoList>
+
+          {openModal && (
+            <Modal>
+            Funcionalidad de agregar TODO.
+            </Modal>
+            )}
+
+
         </>
       );
     }

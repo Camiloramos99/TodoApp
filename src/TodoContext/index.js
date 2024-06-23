@@ -9,7 +9,11 @@ function TodoProvider({children}) {
         saveItem: saveTodos,
         loading,
         error,
-      } = useLocalStorage('TODOS_V1', []);       
+      } = useLocalStorage('TODOS_V1', []);   
+      
+      
+      const [openModal, setOpenModal] = React.useState(true);           //Creamos actualizador del modal
+
     
       const completedTodos = todos.filter(todo => todo.completed).length;
     
@@ -42,6 +46,8 @@ function TodoProvider({children}) {
             completeTodo,
             deleteTodo,
             todos,
+            openModal,
+            setOpenModal,
         }}>
           {children}
         </TodoContext.Provider>
