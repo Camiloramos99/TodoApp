@@ -23,7 +23,15 @@ function AppUi() {
     return (
         <>
           <TodoCounter />
-          <AddTask />
+          <AddTask 
+            onclickAddTask={ () => {
+              if (!openModal) { 
+                setOpenModal(true);
+              } else {
+                setOpenModal(false);
+              }
+            }}
+          />
 
           <TodoList>
             {loading && (
@@ -52,8 +60,6 @@ function AppUi() {
             Funcionalidad de agregar TODO.
             </Modal>
             )}
-
-
         </>
       );
     }

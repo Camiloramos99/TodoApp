@@ -12,9 +12,24 @@ function TodoProvider({children}) {
       } = useLocalStorage('TODOS_V1', []);   
       
       
-      const [openModal, setOpenModal] = React.useState(true);           //Creamos actualizador del modal
+      const [openModal, setOpenModal] = React.useState(false);           //Creamos actualizador del modal
 
     
+      // if (onclickAddTask & !openModal) { 
+
+      //   setOpenModal(true);
+
+      // } else {
+      //   setOpenModal(false);
+      // }
+       
+
+
+
+
+
+
+
       const completedTodos = todos.filter(todo => todo.completed).length;
     
       const totalTodos = todos.length;

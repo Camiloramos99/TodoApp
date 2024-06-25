@@ -5,7 +5,7 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   background-color: #F9FBFC;
@@ -25,4 +25,5 @@ body {
   display: grid;
   grid-template-columns: 12% 76% 12%;
   justify-items: center;
+  justify-self: center;
 }
