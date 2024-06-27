@@ -24,6 +24,7 @@ function TodoProvider({children}) {
           completed: false,
         });
         saveTodos(newTodos);
+        AddTask.text = "xxx";
       };
     
       const completeTodo = (text) => {   
