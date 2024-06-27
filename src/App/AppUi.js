@@ -1,6 +1,6 @@
 import React from 'react';
 import { TodoCounter } from '../TodoCounter';
-import { AddTask } from '../AddTask';
+import { AddTaskSection } from '../AddTaskSection';
 import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoItem';
 import { TodosLoading } from '../TodosLoading';
@@ -23,15 +23,7 @@ function AppUi() {
     return (
         <>
           <TodoCounter />
-          <AddTask 
-            onclickAddTask={ () => {
-              if (!openModal) { 
-                setOpenModal(true);
-              } else {
-                setOpenModal(false);
-              }
-            }}
-          />
+          <AddTaskSection/>
 
           <TodoList>
             {loading && (

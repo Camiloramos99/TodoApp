@@ -11,29 +11,20 @@ function TodoProvider({children}) {
         error,
       } = useLocalStorage('TODOS_V1', []);   
       
-      
-      const [openModal, setOpenModal] = React.useState(false);           //Creamos actualizador del modal
-
-    
-      // if (onclickAddTask & !openModal) { 
-
-      //   setOpenModal(true);
-
-      // } else {
-      //   setOpenModal(false);
-      // }
-       
-
-
-
-
-
-
+      const [openModal, setOpenModal] = React.useState(false);     //Creamos actualizador del modal
 
       const completedTodos = todos.filter(todo => todo.completed).length;
     
       const totalTodos = todos.length;
-    
+
+      const AddTask = (text) => {   
+        const newTodos = [...todos];
+        newTodos.push({
+          text,
+          completed: false,
+        });
+        saveTodos(newTodos);
+      };
     
       const completeTodo = (text) => {   
         const newTodos = [...todos];
@@ -63,6 +54,7 @@ function TodoProvider({children}) {
             todos,
             openModal,
             setOpenModal,
+            AddTask,
         }}>
           {children}
         </TodoContext.Provider>
