@@ -19,20 +19,24 @@ function TodoProvider({children}) {
 
       const AddTask = (text) => {   
         const newTodos = [...todos];
-        newTodos.push({
-          text,
-          completed: false,
-        });
-        saveTodos(newTodos);
-        AddTask.text = "xxx";
+          if(text !== "" && !newTodos.some(task => task.text === text)) {
+            newTodos.push({
+              text,
+              completed: false,
+            });
+            saveTodos(newTodos);
+          }
+        
       };
     
       const completeTodo = (text) => {   
         const newTodos = [...todos];
         const todoIndex = newTodos.findIndex(
-          (todo) => todo.text === text
-          );
-        newTodos[todoIndex].completed = true;
+          (todo) => todo.text === text);
+        if(newTodos[todoIndex].completed === false) {
+          newTodos[todoIndex].completed = true
+        }else {
+            newTodos[todoIndex].completed = false}
         saveTodos(newTodos);
       };
     
