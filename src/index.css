@@ -8,17 +8,19 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
-  background-color: #F9FBFC;
+  background-color: #0C3332;
 
 }
 
 #root {
-  margin: 0;
+  margin: 40px;
   position: relative;
   width: 380px;
   min-width: 300px;
   max-width: 380px;
-  min-height: 97vh;
+  height: 60vh;
+  max-height: 88vh;  
+  min-height: 60vh;
   background-color: #2D3E50	;
   color: #F9FBFC;
   border-radius: 5px;

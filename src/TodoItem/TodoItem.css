@@ -3,24 +3,21 @@ li {
     background-color:#00bfa566;
     display: flex;
     border-radius: 5px;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.9rem;
     border: 0;
-    height: 40px;
+    height: 30px;
     padding: 0 10px;
     align-items: center;
 
 }
-li p {
-    display: inline-block;
-    color: #F9FBFC;
-    font-size: 12.5px;    
-    margin: 0;
-    padding: 7px;
-}
-
 .TodoItem-p {
     width: -webkit-fill-available;
-    font-size: 15px;
+    display: inline-block;
+    color: #F9FBFC;
+    margin: 0;
+    padding: 7px;
+    font-size: 12px;
     line-height: 24px;
     font-weight: 400;
+    overflow: hidden;
 }

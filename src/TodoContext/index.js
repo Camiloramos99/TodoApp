@@ -20,14 +20,17 @@ function TodoProvider({children}) {
       const AddTask = (text) => {   
         const newTodos = [...todos];
           if(text !== "" && !newTodos.some(task => task.text === text)) {
-            newTodos.push({
-              text,
-              completed: false,
-            });
-            saveTodos(newTodos);
+            if (newTodos.length < 7) { // Verifica si hay menos de 8 elementos
+              newTodos.push({
+                text,
+                completed: false,
+              });
+              saveTodos(newTodos);
+            } else {
+              console.log("You're at the task limit! It's wonderful to see you so engaged. Maybe consider completing some of your existing tasks to make room for new ones. Keep up the great effort!");
+            }
           }
-        
-      };
+        };
     
       const completeTodo = (text) => {   
         const newTodos = [...todos];
