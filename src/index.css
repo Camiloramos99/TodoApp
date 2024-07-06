@@ -18,14 +18,13 @@ body {
   width: 380px;
   min-width: 300px;
   max-width: 380px;
-  height: 60vh;
-  max-height: 88vh;  
-  min-height: 60vh;
+  min-height: 54vh;
   background-color: #2D3E50	;
   color: #F9FBFC;
   border-radius: 5px;
   display: grid;
   grid-template-columns: 12% 76% 12%;
+  grid-template-rows: 163px auto;
   justify-items: center;
   justify-self: center;
 }
