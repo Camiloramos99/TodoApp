@@ -17,7 +17,6 @@ function AppUi() {
     completeTodo,
     deleteTodo,
     todos,
-    // descompletarTodo,
     openModal,
     setOpenModal,
  } = React.useContext(TodoContext);
@@ -40,8 +39,6 @@ function AppUi() {
               key={todo.text} 
               Text={todo.text} 
               completed={todo.completed}
-              // OnNoCompleted={() => 
-              //   descompletarTodo(todo.text)}
               onComplete={ () => 
                 completeTodo(todo.text)}
               onDelete={ () => 
@@ -52,7 +49,6 @@ function AppUi() {
 
           {openModal && (
             <Modal>
-            Funcionalidad de agregar TODO.
             </Modal>
             )}
         </>

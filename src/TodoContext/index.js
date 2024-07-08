@@ -27,7 +27,7 @@ function TodoProvider({children}) {
               });
               saveTodos(newTodos);
             } else {
-              console.log("You're at the task limit! It's wonderful to see you so engaged. Maybe consider completing some of your existing tasks to make room for new ones. Keep up the great effort!");
+              setOpenModal(true);
             }
           }
         };
