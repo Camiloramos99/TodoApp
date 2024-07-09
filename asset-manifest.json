@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Camiloramos99/TodoApp.git/static/css/main.6334d3fe.css",
+    "main.js": "/Camiloramos99/TodoApp.git/static/js/main.91ffb608.js",
+    "index.html": "/Camiloramos99/TodoApp.git/index.html",
+    "static/media/delete.svg": "/Camiloramos99/TodoApp.git/static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
+    "static/media/check.svg": "/Camiloramos99/TodoApp.git/static/media/check.e9a948bba52a34123d2ed7aeda0ea495.svg",
+    "main.6334d3fe.css.map": "/Camiloramos99/TodoApp.git/static/css/main.6334d3fe.css.map",
+    "main.91ffb608.js.map": "/Camiloramos99/TodoApp.git/static/js/main.91ffb608.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6334d3fe.css",
+    "static/js/main.91ffb608.js"
+  ]
+}
