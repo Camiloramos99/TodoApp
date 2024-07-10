@@ -1,4 +1,4 @@
-# [TODO Machine]
+# [TODO Machine](https://camiloramos99.github.io/TodoApp/)
 
 # Proyecto de Aprendizaje del Curso de [React JS](https://platzi.com/cursos/react/) de [Platzi](https://platzi.com/ "Platzi")
 
@@ -12,8 +12,7 @@ Este repositorio es el resultado de mi dedicación y esfuerzo en el curso de Rea
 * **Gestión de Tareas:** Añade, marca como completadas o elimina tareas con facilidad.
 * **Contador de Tareas:** Visualiza rápidamente las tareas pendientes y completadas.
 * **Experiencia de Usuario:** Disfruta de una animación inicial y mensajes útiles para una gestión eficiente.
-
-## Características Detalladas
+* 
 Para aquellos interesados en una descripción más profunda de las funcionalidades, [haz clic aquí](#características-detalladas) para más información.
 
 ## En este curso aprendí a trabajar con :
