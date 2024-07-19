@@ -2,8 +2,8 @@
   "name": "platzi-intro-react-base",
   "version": "0.1.0",
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "17.0",
+    "react-dom": "17.0",
     "react-scripts": "5.0.1",
     "vite-plugin-svgr": "^4.2.0",
     "web-vitals": "^2.1.4"
@@ -11,8 +11,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -31,9 +31,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-   }, "homepage": "https://Camiloramos99.github.io/TodoApp"
+  },
+  "homepage": "https://Camiloramos99.github.io/TodoApp",
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "rimraf": "^6.0.1"
+  }
 }
-
-
-
-
